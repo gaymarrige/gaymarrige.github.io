@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+		    animationTime    : 800,
+		    stepSize         : 75,
+		    accelerationDelta : 30,
+		    accelerationMax   : 2,
+		    keyboardSupport   : true,  
+		    arrowScroll       : 50,
+		    pulseAlgorithm   : true,
+		    pulseScale       : 4,
+		    pulseNormalize   : 1,
+		    touchpadSupport   : true,
+		})
+	</script>
+	<title>TackTracker</title>
+</head>
+<body class="main-page">
+	<h1>Task tracker</h1>
+	<header class="header">
+		<h2>Шапка сайта</h2>
+		<div class="header-container">
+			<div class="logo">
+				<span>Логотип</span>
+				<img src="img/system/Logo.svg" alt="TackTracker">
+			</div>
+			<nav class="header-nav">
+				<span>Навигация</span>
+				<a class="nav-link" href="#">Приложение</a>
+				<a class="nav-link" href="#">Возможности</a>
+				<a class="nav-link" href="#">Стоимость</a>
+				<a class="nav-link" href="#">Блог</a>
+				<a class="nav-link" href="#">Контакты</a>
+			</nav>
+			<div class="header-links">
+				<span>Сслыки</span>
+				<a class="links-item" href="#">
+					<img src="img/system/Gp.svg" alt="Google Play">
+				</a>
+				<a class="links-item" href="#">
+					<img src="img/system/Ap.svg" alt="App Store">
+				</a>
+			</div>
+		</div>
+		
+	</header>
+	<main class="main">
+		<h2>Главная страница</h2>
+		<div class="main-container">
+			<div class="main-content">
+				<span>Контент</span>
+				<h3 class="main-header">Приложение органайзер</h3>
+				<div class="main-text">
+					<p>Контролируй все свои дела и задачи. Не упускай ничего важного. Заметки, даты и напоминания. Все в одном месте.</p>
+				</div>
+				<a class="button" href="#">
+					Начать пользоваться
+				</a>
+			</div>
+			<div class="main-img">
+				<span>Контентное изображение</span>
+				<img src="img/content/Org_content.png" alt="Приложение TackTracker">
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<h2>Подвал сайта</h2>
+		<div class="footer-container">
+			<div class="footer-copyright">
+				<span>Copyright</span>
+				<p>
+					© 2021 ТаскТрекер. Все права защищены
+				</p>
+			</div>
+			<div class="footer-icons">
+				<span>Ссылки на соц сети</span>
+				<a class="icons-item" href="#">
+					<img src="img/system/Instagram.svg" alt="Instagram">
+				</a>
+				<a class="icons-item" href="#">
+					<img src="img/system/Dribbble.svg" alt="Dribbble">
+				</a>
+				<a class="icons-item" href="#">
+					<img src="img/system/Twitter.svg" alt="Twitter">
+				</a>
+				<a class="icons-item" href="#">
+					<img src="img/system/Youtube.svg" alt="Youtube">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
