@@ -1,0 +1,214 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html,
+body{
+	font-family: 'Manrope', sans-serif;
+	margin: 0;
+	height: 100%;
+}
+
+h1, h2{
+	display: none;
+}
+
+p{
+	margin: 0px;
+}
+
+img{
+	display: block;
+}
+
+.main-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*Header*/
+
+.header{
+	height: 73px;
+	border-bottom: 1px solid #E5E9F2;
+	display: flex;
+	align-items: center;
+}
+
+.header-container{
+	width: 1110px;
+	height: 72px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	margin-right: 38px;
+}
+
+.logo>span{
+	display: none;
+}
+
+.header-nav{
+	color: #18191f;
+	font-weight: 700px;
+	font-style: 14px;
+	line-height: 20px;
+	margin-top: -4px;
+}
+
+.header-nav>span{
+	display: none;
+}
+
+.nav-link{
+	margin-right: 32px;
+	color: #18191f;
+	text-decoration: none;
+}
+
+.nav-link:hover{
+	color: #8c30f5;
+	transition-duration: 0.3s;
+}
+
+.nav-link:last-child{
+	margin-right: 0;
+}
+
+.header-links{
+	margin-left: auto;
+	display: flex;
+}
+
+.header-links>span{
+	display: none;
+}
+
+.links-item{
+	margin-left: 12px;
+}
+
+.links-item:first-child{
+	margin-left: 0px;
+}
+
+/*Main*/
+
+.main{
+
+}
+
+.main-container{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 197px;
+	padding-bottom: 197px;
+	align-items: center;
+}
+
+.main-content{
+	width: 540px;
+	color: #18191F;
+}
+
+.main-content>span{
+	display: none;
+}
+
+.main-header{
+	margin-top: 0px;
+	margin-bottom: 16px;
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 98px;
+	font-feature-settings: 'liga' off;
+	color: #18191F;
+}
+
+.main-text{
+	margin-bottom: 32px;
+}
+
+.main-text p{
+	font-size: 18px;
+	line-height: 1.78;
+}
+
+.button{
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 35px;
+	height: 62px;
+	background: #8C30F5;
+	border-radius: 8px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 62px;
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-feature-settings: 'liga' off;
+}
+
+.button:hover{
+	opacity: 0.8;
+	transition-duration: 0.3s;
+}
+
+.main-img{
+	/**/
+}
+
+.main-img>span{
+	display: none;
+}
+
+/*Footer*/
+
+.footer{
+	display: flex;
+	align-items: center;
+	height: 72px;
+	width: 100%;
+	background-color: #0b0d17;
+	color: #d9dbe1;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer-container{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	height: 72px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-copyright{
+
+}
+
+.footer-copyright>span, .footer-icons>span{
+	display: none;
+}
+
+.footer-icons{
+	display: flex;
+}
+
+.icons-item{
+	margin-right: 16px;
+}
+
+.icons-item:last-child{
+	margin-right: 0px;
+}
+
