@@ -333,8 +333,7 @@ img{
 }
 
 .main-img{
-	margin-left: auto;
-	margin-top: -30%;
+	display: none;
 }
 
 .footer-container{
@@ -381,7 +380,7 @@ img{
 }
 
 .scroll{
-	margin-left: 50%;
+	margin-left: 60%;
 	margin-top: 36px;
 	width: 23px;
 	hyphens: 32px;
@@ -406,8 +405,7 @@ img{
 }
 
 .main-img{
-	margin-left: auto;
-	margin-top: -30%;
+	display: none;
 }
 
 .footer-container{
