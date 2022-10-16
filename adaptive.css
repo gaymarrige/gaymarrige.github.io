@@ -364,13 +364,13 @@ img{
 }
 
 .header-nav-left{
-	margin-left: 50px;
+	margin-left: 10px;
 	font-weight: 800;
 }
 .nav-link{
-	margin-right: 26px;
-	font-size: 20px;
-	line-height: 27px;
+	margin-right: 10px;
+	font-size: 16px;
+	line-height: 16px;
 	color: #000;
 }
 
