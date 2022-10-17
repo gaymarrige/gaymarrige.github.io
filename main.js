@@ -3,7 +3,7 @@ const navBtn = document.querySelector('#nav-btn');
 const navBtnImg = document.querySelector('#nav-btn-img');
 
 navBtn.onclick = () => {
-    if (navA.classList.toggle('header__nav-row--open')) {
+    if (nav.classList.toggle('header__nav-row--open')) {
         navBtnImg.src = "./../img/system/NAVCLOSE.svg";
     } else {
         navBtnImg.src = './../img/system/NAV.svg';
