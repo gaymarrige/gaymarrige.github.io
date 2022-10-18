@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+		    animationTime    : 800,
+		    stepSize         : 75,
+		    accelerationDelta : 30,
+		    accelerationMax   : 2,
+		    keyboardSupport   : true,  
+		    arrowScroll       : 50,
+		    pulseAlgorithm   : true,
+		    pulseScale       : 4,
+		    pulseNormalize   : 1,
+		    touchpadSupport   : true,
+		})
+	</script>
+	<title>Document</title>
+</head>
+<body>
+	<header id="main" class="header">
+		<div class="container">
+			<div class="header__nav">
+				<div class="header__nav-logo">
+					<a href="#" class="header__nav-logo-link">
+						Nick
+					</a>
+				</div>
+				<nav id="nav" class="header__nav-row">
+					<ul class="header__nav-row-list">
+						<li class="header__nav-row-item">
+							<a href="#" class="header__nav-row-link header__nav-row-link--active">
+								Главная
+							</a>
+						</li>
+						<li class="header__nav-row-item">
+							<a href="#projects" class="header__nav-row-link">
+								Работы
+							</a>
+						</li>
+						<li class="header__nav-row-item">
+							<a href="#technologies" class="header__nav-row-link">
+								Технологии
+							</a>
+						</li>
+						<li class="header__nav-row-item">
+							<a href="#" class="header__nav-row-link">
+								Обо мне
+							</a>
+						</li>
+						<li class="header__nav-row-item">
+							<a href="#contacts" class="header__nav-row-link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<button id="nav-btn" class="header__btn">
+						<img src="img/system/NAV.svg" id="nav-btn-img" alt="NavBtn">
+					</button>
+				</nav>
+			</div>
+			<div class="header__row">
+				<div class="header__content" data-aos="fade-up" data-aos-duration="1000">
+					<h1 class="header__content-title">
+						Nocommentnick<br>
+						Frontend разработчик
+					</h1>
+					<p class="header__content-text">
+						Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Provident quidem sint nesciunt sed veniam earum deserunt.
+					</p>
+				</div>
+				<div class="header__img" data-aos="fade-right" data-aos-duration="1000">
+					<picture>
+						<source media = "(max-width: 700px)" srcset = "img/content/Frontend.png">
+						<img src="img/content/Frontend.png" height="367px" alt="">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section id="technologies" class="services">
+			<div class="container">
+				<div class="services__row">
+					<div class="service__card">
+						<img src="img/system/Python.png" class="service__card-img" width="68px" height="68px" alt="Python">
+						<h3 class="service__card-title">
+							Python dev
+						</h3>
+						<p class="service__card-text">
+							Разработка десктоп и веб приложений на языке Python. Используются технологии Django, Flask, PyQt.
+						</p>
+					</div>
+					<div class="service__card">
+						<img src="img/system/Html5.png" class="service__card-img" width="68px" height="68px" alt="Html5/CSS3">
+						<h3 class="service__card-title">
+							Web верстка
+						</h3>
+						<p class="service__card-text">
+							Верстка готовых макетов на HTML5 и CSS3 по методологии БЭМ.
+						</p>
+					</div>
+					<div class="service__card">
+						<img src="img/system/Javascript.png" class="service__card-img" width="68px" height="68px" alt="Javascript">
+						<h3 class="service__card-title">
+							Js разработка
+						</h3>
+						<p class="service__card-text">
+							Разработка сайтов на Js. Используются технологии Javascript, Typescript, JQuery, React.js, сборкаа на Gulp4 и Webpack5.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="portfolio">
+			<div class="container">
+				<h2 class="portfolio-title">
+					Портфолио
+				</h2>
+				<div class="project" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="img/content/TackTracker.png" width="708px" class="project-img" alt="NewCollection">
+					<h3 class="project-title">
+						<a href="" class="project-title-link">TackTracker - Landing Page</a>
+					</h3>
+				</div>
+				<div class="project" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="img/content/FoodFarming.png" width="708px" class="project-img" alt="Reebok">
+					<h3 class="project-title">
+						<a href="" class="project-title-link">Food Farming - Landing Page</a>
+					</h3>
+				</div>
+				<div class="project" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="img/content/Greenhouse.png" width="708px" class="project-img" alt="Braun">
+					<h3 class="project-title">
+						<a href="" class="project-title-link">Greenhouse - Landing Page</a>
+					</h3>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div id="contacts" class="contacts">
+				<h2 class="contacts-title">
+					Контакты
+				</h2>
+				<p class="contacts-text">
+					Хотите знать больше?<br>
+					Свяжитесь со мной!
+				</p>
+				<div class="contacts-btn">
+					<a href="#" class="contacts-btn-link">Связаться</a>
+				</div>
+				<div class="contacts-social">
+					<a href="#" class="contacts-social-link"><img src="img/system/LinkedIn.svg" alt=""></a>
+					<a href="#" class="contacts-social-link"><img src="img/system/Instargam.svg" alt=""></a>
+					<a href="#" class="contacts-social-link"><img src="img/system/Behance.svg" alt=""></a>
+					<a href="#" class="contacts-social-link"><img src="img/system/Dribble.svg" alt=""></a>
+				</div>
+				<div class="contacts-footer">
+					<p class="contacts-footer-text">Я на<br>
+					LinkedIn, Instagram, Behance, Dribble</p>
+				</div>
+				<div class="contacts-up">
+				<a href="#main" class="contacts-up-btn"><img src="img/system/Icon.png" width="23px" alt=""></a>
+			</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
