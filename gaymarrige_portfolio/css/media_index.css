@@ -1,0 +1,18 @@
+@media (max-width: 650px) {
+	
+	.index-title{
+		font-size: 54px;
+	}
+
+	.index-homepage{
+		font-size: 34px;
+	}
+
+	.wrapper{
+		flex-direction: column;
+	}
+
+	.topage{
+		padding-top: 20px;
+	}
+}
