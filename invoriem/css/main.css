@@ -117,11 +117,11 @@ body{
 
 .nav__item_btn:active{
 	left: 1px;
-	transition: 0.3s;
+	transition: 0.1s;
 }
 
 .nav__item_btn:hover:after{
-	transition: 0.3s ease;
+	transition: 0.1s ease;
 	right: 15px;
 	background-image: url(./../img/system/Arrow_Right_White.png);
 }
@@ -192,11 +192,11 @@ body{
 
 .header-content__btn:active{
 	left: 1px;
-	transition: 0.3s;
+	transition: 0.1s;
 }
 
 .header-content__btn:hover:after{
-	transition: 0.3s;
+	transition: 0.1s;
 	right: 15px;
 }
 
