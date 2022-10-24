@@ -1,0 +1,196 @@
+:root{
+	--teal: #114455;
+	--dark-gray: #1F1F1F;
+	--white: #FFFFFF;
+	--blue: #4A2AD3;
+}
+
+@media (max-width: 1000px) {
+	
+	.header-content__title{
+		max-width: 500px;
+		margin-bottom: 28px;
+
+		font-size: 50px;
+	}
+
+	.header-content__text{
+		font-size: 24px;
+		line-height: 1.57;
+		margin-bottom: 52px;
+	}
+
+	.nav__list{
+		column-gap: 60px;
+	}
+
+	.slider{
+		width: 1200px;
+	}
+
+	.slide{
+		padding-left: 33px;
+	}
+
+	.container-right{
+		padding-left: 15px;
+	}
+
+	.slider__title {
+		bottom: 22px;
+
+		background: linear-gradient(90deg, rgba(17,68,85,1) 33px, rgba(255,255,255,1) 33px);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+
+		font-size: 60px;
+		line-height: 70px;
+		color: var(--teal);
+	}
+
+	.section-video{
+		padding: 50px 0px;
+	}
+
+	.slider__img{
+		min-width: 224px;
+		min-height: 264px;
+	}
+
+	.footer{
+		padding: 40px 0px 32px 0px;
+	}
+
+	.footer__row{
+		align-items: center;
+		flex-direction: column-reverse;
+		row-gap: 32px;
+	}
+
+	.footer__nav{
+		align-items: center;
+		flex-direction: column;
+		row-gap: 16px;
+	}
+
+	.footer__email_link{
+		color: var(--blue);
+	}
+
+	.footer__email_link:hover{
+	text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+	
+	.nav__logo{
+		max-width: 109px;
+		margin-left: 24px;
+	}
+
+	.nav__list{
+		display: none;
+	}
+
+	.nav__btn{
+		display: block;
+		margin-right: 1px;
+	}
+
+	.header-content{
+		display: none;
+	}
+
+	.header-content-mobile{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 27px;
+	}
+
+	.header-logo__mobile{
+		width: 244px;
+	}
+
+	.header-text__mobile{
+		max-width: 237px;
+
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		opacity: 0.7;
+		color: var(--dark-gray);
+	}
+
+	.header-link{
+		width: 19px;
+		height: 16px;
+		bottom: 32px;
+	}
+
+	.case-studies{
+		padding: 80px 0px;
+	}
+
+	.case-studies__title{
+		margin-bottom: 7px;
+	}
+
+	.title{
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.case-studies__text{
+		max-width: 291px;
+		margin-bottom: 31px;
+	}
+
+	.text{
+		font-size: 16px;
+	}
+
+	.slide{
+		padding-left: 33px;
+	}
+
+	.container-right{
+		padding-left: 15px;
+	}
+
+	.slider__title {
+		bottom: 22px;
+
+		background: linear-gradient(90deg, rgba(17,68,85,1) 33px, rgba(255,255,255,1) 33px);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+
+		font-size: 60px;
+		line-height: 70px;
+		color: var(--teal);
+	}
+
+	.section-video{
+		padding: 50px 0px;
+	}
+
+	.section-video{
+		padding: 0px 0px 80px 0px;
+
+	}
+
+	.video__title{
+		margin-bottom: 7px;
+	}
+
+	.video__text{
+		margin-bottom: 40px;
+	}
+
+	.video__content{
+		margin-top: 0px;
+	}
+}
+}

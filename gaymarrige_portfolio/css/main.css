@@ -40,6 +40,14 @@ img{
 	padding: 15px 20px;
 }
 
+.topage__img{
+	transition: 0.3s ease;
+}
+
+.topage__link{
+	transition: 0.3s ease;
+}
+
 .topage__link:hover .topage__img{
 	border-radius: 50px;
 	background: var(--black);
