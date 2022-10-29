@@ -1,0 +1,215 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --blue: #00ACC1;
+    --purple: #F8EBEB;
+    --text: #626262;
+}
+
+html,
+body{
+    /* background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+	background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); */
+    background: #4b517f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    min-width: 328px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.none{
+    display: none;
+}
+
+/* Header */
+
+.header{
+    margin-bottom: 20px;
+}
+
+.header-container{
+    width: 100%;
+    height: 56px;
+}
+
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.header-nav{
+
+}
+
+.header-nav__toggler{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+}
+
+.toggler-img{
+    display: block;
+    padding-top: 2px;
+    padding-left: 8px;
+}
+
+.header-nav__list{
+    
+}
+
+.header-nav__item{
+
+}
+
+.header-nav__link{
+
+}
+
+.header-title{
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.header-search{
+    
+}
+
+.search-img{
+    display: block;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+/* Main */
+
+.main{
+
+}
+
+/* SectionChat */
+
+.chat{
+    height: 450px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.message-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.message{
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.message__user{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.message__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--text);
+}
+
+/* SectionChatFooter */
+
+.chat-footer{
+
+}
+
+.type-msg{
+
+}
+
+.type-msg__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type-msg__input{
+    width: 80%;
+    height: 60px;
+}
+
+.type-msg__text{
+    width: 100%;
+    padding: 5px 5px;
+    background-color: rgba(0,0,0,0.3) !important;
+    border:0 !important;
+    color:white !important;
+    height: 60px !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    resize: none;
+}
+
+.type-msg__text::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+.type-msg__text:focus{
+    outline: none !important;
+}
+
+.type-msg__name{
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.3) !important;
+    border:0 !important;
+    color:white !important;
+    height: 60px !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    resize: none;
+}
+
+.type-msg__name::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+.type-msg__name:focus{
+    outline: none !important;
+}
+
+.type-msg__btn{
+    margin-right: 5%;
+    padding: 5px 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
