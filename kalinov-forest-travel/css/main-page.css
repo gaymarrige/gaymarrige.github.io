@@ -1,0 +1,95 @@
+@import "./reset.css";
+
+:root{
+	--teal: #114455;
+}
+
+html,
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* Header */
+
+.header-wrapper{
+    padding: 40px 0px;
+}
+
+.header__title{
+    position: relative;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.header__title:after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    left: 15%;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: var(--teal);
+}
+
+/* Main */
+
+.main{
+    margin-bottom: 40px;
+}
+
+.main__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.main__item{
+    position: relative;
+}
+
+.main__link{
+    padding: 10px 62px 10px 24px;
+    border: 1px solid var(--teal);
+    transition: 0.3s ease;
+    border-radius: 5px;
+
+    font-weight: 800;
+    color: var(--teal);
+}
+
+.main__link:after{
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+
+    right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+    transition: 0.3s ease;
+
+	background-image: url(./../img/Arrow_Right_Black.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main__link:hover{
+    background-color: var(--teal);
+    color: white;
+}
+
+.main__link:hover:after{
+    right: 10px;
+    background-image: url(./../img/Arrow_Right_White.svg);
+}
+
