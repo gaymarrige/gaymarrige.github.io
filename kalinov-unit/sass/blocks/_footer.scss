@@ -1,0 +1,120 @@
+.footer{
+    height: 252px;
+    padding: 70px 0px;
+
+    background-color: #1A1A1A;
+
+    @media (max-width: 1199px) {
+        height: 222px;
+        padding: 60px 0px;
+    }
+
+    @media (max-width: 899px) {
+        height: 238px;
+        padding: 50px 0px;
+    }
+
+    @media (max-width: 599px) {
+        height: 338px;
+        padding: 40px 0px;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+
+        @media (max-width: 1199px) {
+            row-gap: 40px;
+        }
+
+        @media (max-width: 899px) {
+            row-gap: 30px;
+        }
+
+        @media (max-width: 599px) {
+            row-gap: 40px;
+        }
+    }
+
+    &__copyright{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.3);
+
+        @media (max-width: 599px) {
+            text-align: center;
+        }
+    }
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    @media (max-width: 899px) {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__list{
+        display: flex;
+        column-gap: 50px;
+
+        @media (max-width: 599px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &__item{
+
+    }
+
+    &__link{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    &__link:hover{
+        color: $add-green;
+    }
+
+    &__link--green{
+        color: $add-green;
+    }
+
+    &__links{
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__socials{
+
+    }
+
+    &__social{
+        display: block;
+        width: 48px;
+        height: 48px;
+        padding: 14px;
+        border-radius: 50%;
+        background-color: rgba(196, 196, 196, 0.1);
+    }
+
+    &__social:hover{
+        background-color: $main-green;
+    }
+
+    &__social--green{
+        background-color: $main-green;
+    }
+}

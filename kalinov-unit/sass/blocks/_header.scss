@@ -1,0 +1,30 @@
+// Header
+
+@mixin overlay ($img) {
+    background: $bg_overlay, $img;
+}
+
+.header{
+    position: relative;
+    height: 870px;
+    padding-top: 60px;
+
+    @include overlay (url("./../img/bg/header-bg.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 899px) {
+        padding-top: 20px;
+    }
+
+    @media (max-width: 599px) {
+        height: 678px;
+    }
+}
+
+.header__btns{
+    display: flex;
+    justify-content: space-between;
+}
+

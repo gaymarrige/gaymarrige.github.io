@@ -1,0 +1,41 @@
+.use{
+    height: 289px;
+    padding: 83px 0px 84px;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+        height: 202px;
+        padding: 40px 0px;
+    }
+
+    @media (max-width: 899px) {
+        height: 190px;
+    }
+
+    @media (max-width: 599px) {
+        height: 196px;
+    }
+
+    @include overlay (url("./../img/bg/section-bg.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+        color: white;
+
+        @media (max-width: 599px) {
+            font-size: 18px;
+        }
+    }
+}

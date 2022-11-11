@@ -1,0 +1,14 @@
+.main-title{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    color: white;
+
+    @media (max-width: 1199px) {
+        font-size: 84px;
+    }
+
+    @media (max-width: 899px) {
+        font-size: 70px;
+    }
+}

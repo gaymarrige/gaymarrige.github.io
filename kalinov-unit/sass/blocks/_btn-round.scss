@@ -1,0 +1,45 @@
+@mixin after ($back) {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url($back);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-round{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in;
+    background-color: white;
+
+    &--menu::after{
+        @include after("./../img/header/nav.svg");
+    }
+
+    &:hover{
+        background-color: $main-green;
+    }
+
+    &--menu:hover::after{
+        background-image: url("./../img/header/nav-white.svg");
+    }
+
+    &--search::after{
+        @include after("./../img/header/search.svg")
+    }
+
+    &--search:hover::after{
+        background-image: url("./../img/header/search-white.svg");
+    }
+
+    &--close::after{
+        @include after("./../img/header/close.svg");
+    }
+
+    &--close:hover::after{
+        background-image: url("./../img/header/close-white.svg");
+    }
+}
