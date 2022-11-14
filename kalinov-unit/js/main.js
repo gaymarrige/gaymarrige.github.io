@@ -73,3 +73,7 @@ btnPrev.onclick = function() {
 	prevSlide.classList.remove('none');
 	prevSlide.setAttribute('data-active', '');
 };
+
+// AOS
+
+AOS.init();

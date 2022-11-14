@@ -1050,14 +1050,61 @@ legend {
   width: 54px;
   height: 54px;
   background-color: #F5F5F5;
+  transition: background-color 0.4s ease;
   border-radius: 50%;
+}
+
+.slide-prev::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.slide-prev:hover::after {
+  background-image: url("./../img/icons/arrow-right.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slide-prev:hover {
+  background-color: #00C470;
 }
 
 .slide-next {
   width: 54px;
   height: 54px;
-  background-color: #00C470;
+  background-color: #F5F5F5;
   border-radius: 50%;
+}
+
+.slide-next::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slide-next:hover::after {
+  background-image: url("./../img/icons/arrow-right.svg");
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.slide-next:hover {
+  background-color: #00C470;
 }
 
 .slide {

@@ -17,14 +17,46 @@
     width: 54px;
     height: 54px;
     background-color: #F5F5F5;
+    transition: background-color 0.4s ease;
     border-radius: 50%;
+}
+
+.slide-prev::after{
+    @include after("./../img/icons/arrow-left.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.slide-prev:hover::after{
+    background-image: url("./../img/icons/arrow-right.svg");
+    transform: rotate(180deg);
+}
+
+.slide-prev:hover{
+    background-color: $main-green;
 }
 
 .slide-next{
     width: 54px;
     height: 54px;
-    background-color: $main-green;
+    background-color: #F5F5F5;
     border-radius: 50%;
+}
+
+.slide-next::after{
+    @include after("./../img/icons/arrow-left.svg");
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+}
+
+.slide-next:hover::after{
+    background-image: url("./../img/icons/arrow-right.svg");
+    transform: rotate(360deg);
+}
+
+.slide-next:hover{
+    background-color: $main-green;
 }
 
 .slide{
