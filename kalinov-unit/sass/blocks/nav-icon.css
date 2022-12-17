@@ -1,0 +1,54 @@
+.nav-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+.nav-icon {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.nav-icon::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.nav-icon::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #000;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+/* Active state */
+.nav-icon--active {
+  background-color: transparent;
+}
+.nav-icon--active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.nav-icon--active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}/*# sourceMappingURL=nav-icon.css.map */

@@ -1,0 +1,62 @@
+.card{
+    width: 270px;
+
+    text-align: center;
+
+    /* Tablet */
+    @media (max-width: 1199px){
+        width: 195px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px){
+        width: 269px;
+    }
+
+    /* MobileXS */
+    @media (max-width: 599px){
+        width: 290px;
+    }
+
+    &__img{
+        margin-bottom: 40px;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            min-height: 32px;
+            margin-bottom: 10px;
+
+            line-height: 1.5;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px){
+            min-height: unset;
+        }
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2.14;
+        color: $gray-text;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            line-height: 1.57;
+        }
+    }
+}

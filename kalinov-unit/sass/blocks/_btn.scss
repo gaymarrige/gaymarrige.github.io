@@ -1,0 +1,26 @@
+.btn{
+    // display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 60px;
+    padding: 0px 40px 0px 41px;
+
+    border-radius: 30px;
+    background-color: #00C470;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: white;
+
+    &:hover{
+        background-color: #01b868;
+    }
+    
+    &:focus{
+        background-color: #00ad62;
+    }
+}

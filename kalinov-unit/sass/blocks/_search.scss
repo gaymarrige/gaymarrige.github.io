@@ -1,45 +1,82 @@
 .search{
-    display: flex;
-    height: $search-size;
-    border-radius: $search-size;
-    background-color: white;
-    overflow: hidden;
-    white-space: nowrap;
+    position: relative;
+    margin-left: auto;
+    z-index: 9;
 
     &__input{
         width: 0px;
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
 
-        border-radius: $search-size;
-        text-overflow: ellipsis;
-        overflow: hidden;
+
+        border-radius: 30px;
+        background-color: white;
 
         font-weight: 500;
         font-size: 16px;
-        transition: 0.4s;
+        line-height: 60px;
+        transition: width 0.2s ease-in;
         color: black;
 
-        @media (max-width: 599px) {
+        &::placeholder{
+            color: rgba(46, 46, 46, 0.5);
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: white;
+
+        transition: background 0.2s ease-in;
+
+        &:hover{
+            background-color: $main-green;
+
+            .search__btn-icon{
+                stroke: white;
+            }
+        }
+
+        &-icon{
+            stroke: black;
+            transition: stroke 0.2s ease-in;
+        }
+    }
+}
+
+.search.search--visible{
+    .search__input{
+        width: 340px;
+        padding-left: 30px;
+        padding-right: 70px;
+
+        /* MobileXS */
+        @media (max-width: 599px){
+            width: 220px;
+
             font-size: 14px;
         }
     }
 
-    &__input::placeholder{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: rgba(46, 46, 46, 0.5);
+    .search__btn{
+        background-color: $main-green;
 
-        @media (max-width: 599px) {
-            font-size: 14px;
+        .search__btn-icon{
+            stroke: white;
         }
-    }
 
-    &:hover &__input{
-        width: 280px;
-        padding: 20px 30px;
-
-        @media (max-width: 599px) {
-            width: 150px;
+        &:hover{
+            background-color: $green-text;
         }
     }
 }

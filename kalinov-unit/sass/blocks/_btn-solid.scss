@@ -1,0 +1,25 @@
+.btn-solid{
+    height: 60px;
+    padding: 0px 40px;
+
+    border-radius: 30px;
+    background-color: white;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #2E2E2E;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    &:focus{
+        background-color: #2F2F2F;
+        color: white;
+    }
+}

@@ -1,0 +1,129 @@
+.footer{
+    padding: 70px 0px;
+
+    background-color: #1A1A1A;
+
+    color: white;
+
+    /* Tablet */
+    @media (max-width: 1199px){
+        padding: 60px 0px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px){
+        padding: 50px 0px;
+    }
+
+    /* MobileXS */
+    @media (max-width: 599px){
+        padding: 40px 0px;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            margin-bottom: 40px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px){
+            flex-direction: column;
+            row-gap: 30px;
+            margin-bottom: 30px;    
+        }
+
+        /* MobileXS */
+        @media (max-width: 599px){
+            row-gap: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__nav{
+        margin-right: 50px;
+
+        /* Mobile */
+        @media (max-width: 899px){
+            margin-right: 0px;
+        }
+
+        /* MobileXS */
+        @media (max-width: 599px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        &-item{
+            margin-right: 50px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: white;
+
+            /* MobileXS */
+            @media (max-width: 599px){
+                margin-right: 0px;
+            }
+
+            &:hover{
+                color: $green-text;
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__socials{
+        display: flex;
+
+        &-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            margin-right: 30px;
+
+            border-radius: 50%;
+            background-color: rgba(196, 196, 196, 0.1);
+
+            /* MobileXS */
+            @media (max-width: 599px){
+                margin-right: 20px;
+            }
+
+            &:hover{
+                background-color: $main-green;
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__copyright{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.3);
+
+        & p + p{
+            margin-top: 15px;
+        }
+    }
+}

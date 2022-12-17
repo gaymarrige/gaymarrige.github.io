@@ -1,0 +1,3 @@
+@mixin overlay ($img) {
+    background: $bg_overlay, $img;
+}

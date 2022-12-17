@@ -1,28 +1,40 @@
 // Base
 
-@import "./base/base";
 @import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
 
 // Blocks
 
-@import "./blocks/header";
 @import "./blocks/btn-round";
 @import "./blocks/search";
-@import "./blocks/header-nav";
-@import "./blocks/header-content";
-@import "./blocks/main-title";
-@import "./blocks/header-form";
-@import "./blocks/form-btn";
-@import "./blocks/header-scroll";
-@import "./blocks/functional";
-@import "./blocks/undertitle";
+@import "./blocks/nav-icon.scss";
+@import "./blocks/nav";
+@import "./blocks/form";
+@import "./blocks/btn";
 @import "./blocks/title";
-@import "./blocks/use";
-@import "./blocks/features";
-@import "./blocks/plan";
-@import "./blocks/clients";
+@import "./blocks/subtitle";
+@import "./blocks/card";
+@import "./blocks/package";
+@import "./blocks/btn-outline";
+@import "./blocks/btn-solid";
 @import "./blocks/slider";
-@import "./blocks/footer";
+
+// OwlCarouselTheme
+
+@import "./owlCarousel-theme/vars";
+@import "./owlCarousel-theme/theme";
+
+// Sections
+
+@import "./sections/header";
+@import "./sections/section-functional";
+@import "./sections/section-cta";
+@import "./sections/section-tasks";
+@import "./sections/section-focus";
+@import "./sections/section-price";
+@import "./sections/section-clients";
+@import "./sections/footer";
 
 // Media
 

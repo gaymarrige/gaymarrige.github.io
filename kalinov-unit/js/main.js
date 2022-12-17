@@ -1,79 +1,35 @@
-const btnOpen = document.querySelector("#btnOpen");
-const btnClose = document.querySelector("#btnClose");
-const headerNav = document.querySelector("#headerNav");
-
-btnOpen.onclick = function(){
-    headerNav.classList.remove("none");
-    btnOpen.classList.add("onone");
-}
-
-btnClose.onclick = function(){
-    headerNav.classList.add("none");
-    btnOpen.classList.remove("onone");
-}
-
-// Slider
-
-const slider = document.querySelector('#slider');
-const sliderItems = Array.from(slider.children);
-const btnNext = document.querySelector('#btnNext');
-const btnPrev = document.querySelector('#btnPrev');
-
-sliderItems.forEach(function (slide, index){
-
-	if (index !== 0) slide.classList.add('none');
-
-	slide.dataset.index = index;
-
-	sliderItems[0].setAttribute('data-active', '');
-
-	slide.addEventListener('click', function(){
-		this.classList.add('none');
-		this.removeAttribute('data-active');
-
-		let nextSlideIndex = index + 1 === sliderItems.length ? 0 : index + 1;
-		/*if(index + 1 === sliderItems.length) {
-			nextSlideIndex = 0;
-		} else {
-			nextSlideIndex = index + 1;
-		}*/
-
-		// const nextSlideIndex = +slide.dataset.index + 1;
-
-		const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
-		nextSlide.classList.remove('none');
-		nextSlide.setAttribute('data-active', '');
-	})
+document.querySelector('.nav-icon-wrapper').addEventListener('click', function () {
+	document.querySelector('.nav-icon').classList.toggle('nav-icon--active');
+	document.querySelector('.nav-icon-wrapper').classList.toggle('nav-wrapper--active');
 });
 
-btnNext.onclick = function() {
-	const currentSlide = slider.querySelector('[data-active]');
-	const currentSlideIndex = +currentSlide.dataset.index;
+const navIcon = document.querySelector('.nav-icon-wrapper');
+const nav = document.querySelector('.nav');
 
-	currentSlide.classList.add('none');
-	currentSlide.removeAttribute('data-active');
+navIcon.addEventListener('click', function () {
+	nav.classList.toggle('nav--active');
+});
 
-	const nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1;
-	const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+// Находим ссылки внутри мобильной навигации
+const navLinks = document.querySelectorAll('.nav__link');
 
-	nextSlide.classList.remove('none');
-	nextSlide.setAttribute('data-active', '');
-}
+// Обходим ссылки методом forEach
+navLinks.forEach(function (item) {
+	// Для каждой ссылки добавляем прослушку по событию "Клик"
+	item.addEventListener('click', function () {
+		document.querySelector('.nav-icon').classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
+		document.querySelector('.nav-icon-wrapper').classList.remove('nav-wrapper--active');
+		nav.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
+	});
+});
 
-btnPrev.onclick = function() {
-	const currentSlide = slider.querySelector('[data-active]');
-	const currentSlideIndex = +currentSlide.dataset.index;
 
-	currentSlide.classList.add('none');
-	currentSlide.removeAttribute('data-active');
+const searchForm = document.querySelector('.search');
+const searchBtn = document.querySelector('.search__btn');
 
-	const prevSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1;
-	const prevSlide = slider.querySelector(`[data-index="${prevSlideIndex}"]`);
-
-	prevSlide.classList.remove('none');
-	prevSlide.setAttribute('data-active', '');
-};
-
-// AOS
-
-AOS.init();
+searchBtn.addEventListener('click', function(event){
+	if (!searchForm.classList.contains('search--visible')){
+		event.preventDefault();
+		searchForm.classList.toggle('search--visible');
+	}
+});

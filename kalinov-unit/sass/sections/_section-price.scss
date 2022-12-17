@@ -1,0 +1,108 @@
+.section-price{
+    padding: 90px 0px 100px;
+
+    @include overlay(url("./../img/bg/plan-bg.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* Tablet */
+    @media (max-width: 1199px){
+        padding: 50px 0px;
+
+        @include overlay (url("./../img/bg/plan-tablet.jpg"));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px){
+        padding: 50px 0px 40px;
+
+        @include overlay (url("./../img/bg/plan-mobile.jpg"));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* MobileXS */
+    @media (max-width: 599px){
+        padding: 40px 0px;
+
+        @include overlay (url("./../img/bg/plan-xs.jpg"));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title, .subtitle{
+        color: white;
+    }
+
+    &__content{
+
+    }
+
+    &__header{
+        margin-bottom: 80px;
+
+        text-align: center;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            margin-bottom: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px){
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 40px;
+
+        /* Tablet */
+        @media (max-width: 1199px){
+            margin-bottom: 20px;
+        }
+
+        /* MobileXS */
+        @media (max-width: 599px){
+            margin-bottom: 10px;
+        }
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+
+        & > *{
+            width: 300px;
+
+            /* Tablet */
+            @media (max-width: 1199px){
+                width: 270px;
+            }
+
+            /* Mobile */
+            @media (max-width: 899px){
+                width: 300px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 899px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* MobileXS */
+        @media (max-width: 599px){
+            width: 290px;
+        }
+    }
+}
