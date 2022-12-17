@@ -1,0 +1,13 @@
+.header{
+    padding-top: 52px;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        padding-top: 60px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        padding-top: 30px;           
+    }
+}

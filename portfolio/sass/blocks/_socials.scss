@@ -1,0 +1,17 @@
+.socials{
+    display: flex;
+    column-gap: 30px;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        column-gap: 20px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        img{
+            width: 38px;
+            height: 38px;
+        }           
+    }
+}

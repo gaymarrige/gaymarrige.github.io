@@ -1,0 +1,21 @@
+.btn{
+    padding: 0px 40px;
+
+    border-radius: 50px;
+    background-color: $orange-color;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 64px;
+
+    color: $black-color;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        padding: 0px 26px;
+    }
+
+    &--gray{
+        background-color: $gray-color;
+    }
+}
