@@ -15,6 +15,13 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="./sass/main.css" />
 
+	<!-- FancyBox -->
+
+	<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +46,11 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 
-<body id="top">
+<body id="top" class="body">
+
+	<div class="overlay">
+
+	</div>
 
 	<ul id="nav" class="one-nav">
 		<li class="current"><a href="#header"></a></li>
@@ -49,28 +60,33 @@
 
 	<!-- HeaderTop -->
 	<section class="header-top">
+
+		<div class="overlay">
+
+		</div>
+
 		<div class="container">
 			<div class="header-top__wrapper">
 
 				<nav class="header-top__nav">
 					<ul class="header-top__nav-list">
 						<li class="header-top__nav-item">
-							<a href="#skills">
+							<a href="#skills" class="linkFor">
 								Навыки
 							</a>
 						</li>
 						<li class="header-top__nav-item">
-							<a href="#portfolio">
+							<a href="#portfolio" class="linkFor">
 								Портфолио
 							</a>
 						</li>
 						<li class="header-top__nav-item">
-							<a href="#hw">
+							<a href="#hw" class="linkFor">
 								Как я работаю
 							</a>
 						</li>
 						<li class="header-top__nav-item">
-							<a href="#contacts">
+							<a href="#contacts" class="linkFor">
 								Контакты
 							</a>
 						</li>
@@ -78,10 +94,10 @@
 				</nav>
 
 				<div class="header-top__links">
-					<a href="#!">
-						<img src="./img/header-top/linkedin.svg" alt="LinkedIn">
+					<a href="https://habr.com/ru/users/nocommentnick/" class="header-top__links-item">
+						<img src="./img/header-top/habr_logo_icon.svg" alt="LinkedIn">
 					</a>
-					<a href="#!">
+					<a href="https://github.com/gaymarrige" class="header-top__links-item">
 						<img src="./img/header-top/github-icon.svg" alt="GitHub">
 					</a>
 				</div>
@@ -90,41 +106,43 @@
 
 			<!-- Навигация -->
 			<nav class="nav">
-				<a href="#skills">Навыки</a>
-				<a href="#portfolio">Портфолио</a>
-				<a href="#hw">Как я работаю</a>
-				<a href="#contacts">Контакты</a>
+				<a href="#skills" class="linkForMobile">Навыки</a>
+				<a href="#portfolio" class="linkForMobile">Портфолио</a>
+				<a href="#hw" class="linkForMobile">Как я работаю</a>
+				<a href="#contacts" class="linkForMobile">Контакты</a>
 
 				<div class="nav__links">
 					<div class="nav__links-social">
 						<div class="socials">
-							<a href="#!" class="socials__link">
-								<img src="./img/skills/telegram.svg" alt="Telegram">
-							</a>
-							<a href="#!" class="socials__link">
-								<img src="./img/skills/vk.svg" alt="Vk">
-							</a>
-							<a href="#!" class="socials__link">
-								<img src="./img/skills/facebook.svg" alt="Facebook">
-							</a>
-							<a href="#!" class="socials__link">
-								<img src="./img/skills/instagram.svg" alt="Instagram">
-							</a>
-							<a href="#!" class="socials__link">
-								<img src="./img/skills/whatsapp.svg" alt="whatsapp">
-							</a>
+							<!-- <a href="#!" class="socials__link">
+									<img src="./img/skills/telegram.svg" alt="Telegram">
+								</a> -->
+								<a href="https://vk.com/nocommentnick" target="_blank" class="socials__link">
+									<img src="./img/skills/vk.svg" alt="Vk">
+								</a>
+								<!-- <a href="#!" class="socials__link">
+									<img src="./img/skills/facebook.svg" alt="Facebook">
+								</a> -->
+								<!-- <a href="#!" class="socials__link">
+									<img src="./img/skills/instagram.svg" alt="Instagram">
+								</a> -->
+								<a href="https://wa.me/79136543075" target="_blank" class="socials__link">
+									<img src="./img/skills/whatsapp.svg" alt="whatsapp">
+								</a>
+								<a href="https://www.fl.ru/users/whodesnick/portfolio/" target="_blank" class="socials__link">
+									<img src="./img/skills/freelance.png" alt="Fl.ru">
+								</a>
 						</div>
 					</div>
 
 					<div class="nav__links-link">
-						<a href="#!" class="main-link">
-							yurij.kluchevsky@gmail.com
+						<a href="mailto:whodes.nick@gmail.com" class="main-link">
+							whodes.nick@gmail.com
 						</a>
 					</div>
 				</div>
 			</nav>
 
-		</div>
 		</div>
 
 		<!-- MobileNav -->
@@ -142,6 +160,7 @@
 					</span>
 				</button>
 			</div>
+		</div>
 	</section>
 
 	<!-- Header -->
@@ -169,10 +188,10 @@
 						</div>
 
 						<div class="about__btns">
-							<a href="#portfolio" class="btn">
+							<a href="#portfolio" class="btn linkFor">
 								Познакомиться
 							</a>
-							<a href="#contacts" class="btn btn--gray">
+							<a href="#contacts" class="btn btn--gray linkFor">
 								Контакты
 							</a>
 						</div>
@@ -245,27 +264,30 @@
 
 						<div class="skills__social">
 							<div class="socials">
-								<a href="#!" class="socials__link">
+								<!-- <a href="#!" class="socials__link">
 									<img src="./img/skills/telegram.svg" alt="Telegram">
-								</a>
-								<a href="#!" class="socials__link">
+								</a> -->
+								<a href="https://vk.com/nocommentnick" target="_blank" class="socials__link">
 									<img src="./img/skills/vk.svg" alt="Vk">
 								</a>
-								<a href="#!" class="socials__link">
+								<!-- <a href="#!" class="socials__link">
 									<img src="./img/skills/facebook.svg" alt="Facebook">
-								</a>
-								<a href="#!" class="socials__link">
+								</a> -->
+								<!-- <a href="#!" class="socials__link">
 									<img src="./img/skills/instagram.svg" alt="Instagram">
-								</a>
-								<a href="#!" class="socials__link">
+								</a> -->
+								<a href="https://wa.me/79136543075" target="_blank" class="socials__link">
 									<img src="./img/skills/whatsapp.svg" alt="whatsapp">
+								</a>
+								<a href="https://www.fl.ru/users/whodesnick/portfolio/" target="_blank" class="socials__link">
+									<img src="./img/skills/freelance.png" alt="Fl.ru">
 								</a>
 							</div>
 						</div>
 
 						<div class="skills__mail">
-							<a href="mailto:yurij.kluchevsky@gmail.com" class="main-link">
-								yurij.kluchevsky@gmail.com
+							<a href="mailto:whodes.nick@gmail.com" class="main-link">
+								whodes.nick@gmail.com
 							</a>
 						</div>
 
@@ -290,106 +312,108 @@
 						<div class="mix-block__btns">
 							<button type="button" data-filter="all">Все работы</button>
 							<button type="button" data-filter=".html">HTML верстка</button>
-							<button type="button" data-filter=".wp">WordPress</button>
+							<!-- <button type="button" data-filter=".wp">WordPress</button> -->
 						</div>
 
 						<div id="mix-cards" class="cards">
 
-							<a href="#!" class="card--lg mix html">
-	
-								<div class="card--lg__img">
-										<img src="./img/portfolio/img-1.jpg" alt="Project1">
-										<span href="#!" class="card__link">
-											Смотреть&nbsp;проект
-										</span>
-								</div>
-	
-								<div class="card--lg__heading">
-									<h3 class="heading heading--sm">
-										Верстка “Форест тревел”
-									</h3>
-								</div>
-	
-								<p>Верстка многостраничного сайта</p>
-	
-							</a>
-	
-							<a href="#!" class="card--lg mix html">
-	
-								<div class="card--lg__img">
-									<img src="./img/portfolio/img-2.jpg" alt="Project2">
-									<span href="#!" class="card__link">
+							<div class="card--lg mix html">
+
+								<a href="./img/portfolio/gallery-forest-travel.jpg" class="card--lg__img"
+								data-fancybox="gallery1">
+									<img src="./img/portfolio/forest-travel.jpg" alt="Project1">
+									<span class="card__link">
 										Смотреть&nbsp;проект
 									</span>
-								</div>
-	
+								</a>
+
 								<div class="card--lg__heading">
-									<h3 class="heading heading--sm">
-										Сайт приложения “Юнит”
-									</h3>
+									<a href="./kalinov-forest-travel/index.html" class="heading heading--sm heading-link" target="_blank">
+										Верстка “Форест тревел”
+									</a>
 								</div>
-	
+
+								<p>Верстка многостраничного сайта</p>
+
+							</div>
+
+							<div class="card--lg mix html">
+
+								<a href="./img/portfolio/gallery-unit.jpg" class="card--lg__img"
+								data-fancybox="gallery">
+									<img src="./img/portfolio/unit.jpg" alt="Project2">
+									<span class="card__link">
+										Смотреть&nbsp;проект
+									</span>
+								</a>
+
+								<div class="card--lg__heading">
+									<a href="./kalinov-unit/index.html" class="heading heading--sm heading-link" target="_blank">
+										Сайт приложения “Юнит”
+									</a>
+								</div>
+
 								<p>Верстка лендинга</p>
-	
-							</a>
-	
-							<a href="#!" class="card mix wp">
-	
+
+							</div>
+
+							<!-- <a href="#!" class="card mix wp">
+
 								<div class="card__img">
 									<img src="./img/portfolio/img-3.jpg" alt="Project3">
-									<span href="#!" class="card__link">
+									<span class="card__link">
 										Смотреть&nbsp;проект
 									</span>
 								</div>
-	
+
 								<div class="card__heading">
 									<h3 class="heading heading--xs">
 										Верстка “Мир Авто”
 									</h3>
 								</div>
-	
+
 								<p>Верстка многостраничного сайта</p>
-	
+
 							</a>
-	
+
 							<a href="#!" class="card mix wp">
-	
+
 								<div class="card__img">
 									<img src="./img/portfolio/img-4.jpg" alt="Project4">
-									<span href="#!" class="card__link">
+									<span class="card__link">
 										Смотреть&nbsp;проект
 									</span>
 								</div>
-	
+
 								<div class="card__heading">
 									<h3 class="heading heading--xs">
 										Верстка “Мир Авто”
 									</h3>
 								</div>
-	
+
 								<p>Верстка многостраничного сайта</p>
-	
+
 							</a>
-	
+
 							<a href="#!" class="card mix wp">
-	
+
 								<div class="card__img">
 									<img src="./img/portfolio/img-5.jpg" alt="Project5">
-									<span href="#!" class="card__link">
+									<span class="card__link">
 										Смотреть&nbsp;проект
 									</span>
 								</div>
-	
+
 								<div class="card__heading">
 									<h3 class="heading heading--xs">
 										Верстка “Мир Авто”
 									</h3>
 								</div>
-	
+
 								<p>Верстка многостраничного сайта</p>
-	
-							</a>
-	
+
+							</a> -->
+
 						</div>
 					</div>
 
@@ -498,7 +522,7 @@
 		<section id="contacts" class="contacts">
 			<div class="layer contacts__icon" data-depth="0.6">
 				<img src="./img/contacts/contacts-icon.svg" alt="Кавычки">
-			</div>	
+			</div>
 
 			<div class="container">
 				<div class="contacts__wrapper">
@@ -514,6 +538,15 @@
 						<div class="contacts__links">
 
 							<div class="contacts__links-wrapper">
+
+								<div class="contacts__text">
+									<p>
+										Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду
+										для
+										работы над проектом — напишите мне.
+									</p>
+								</div>
+
 								<div class="contacts__info">
 
 									<span>
@@ -521,8 +554,8 @@
 									</span>
 
 									<div class="contacts__link">
-										<a href="mailto:yurij.kluchevsky@gmail.com" class="main-link">
-											yurij.kluchevsky@gmail.com
+										<a href="mailto:whodes.nick@gmail.com" class="main-link">
+											whodes.nick@gmail.com
 										</a>
 									</div>
 
@@ -536,7 +569,7 @@
 
 									<div class="contacts__link">
 										<a href="tel:79801234567" class="main-link">
-											+7 (980) 123-45-67
+											+7 (913) 654-30-75
 										</a>
 									</div>
 
@@ -545,31 +578,60 @@
 
 							<div class="contacts__social">
 								<div class="socials">
-									<a href="#!" class="socials__link">
+									<!-- <a href="#!" class="socials__link">
 										<img src="./img/skills/telegram.svg" alt="Telegram">
-									</a>
-									<a href="#!" class="socials__link">
+									</a> -->
+									<a href="https://vk.com/nocommentnick" target="_blank" class="socials__link">
 										<img src="./img/skills/vk.svg" alt="Vk">
 									</a>
-									<a href="#!" class="socials__link">
+									<!-- <a href="#!" class="socials__link">
 										<img src="./img/skills/facebook.svg" alt="Facebook">
-									</a>
-									<a href="#!" class="socials__link">
+									</a> -->
+									<!-- <a href="#!" class="socials__link">
 										<img src="./img/skills/instagram.svg" alt="Instagram">
-									</a>
-									<a href="#!" class="socials__link">
+									</a> -->
+									<a href="https://wa.me/79136543075" target="_blank" class="socials__link">
 										<img src="./img/skills/whatsapp.svg" alt="whatsapp">
+									</a>
+									<a href="https://www.fl.ru/users/whodesnick/portfolio/" target="_blank" class="socials__link">
+										<img src="./img/skills/freelance.png" alt="Fl.ru">
 									</a>
 								</div>
 							</div>
 
 						</div>
 
-						<div class="contacts__text">
-							<p>
-								Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для
-								работы над проектом — напишите мне.
-							</p>
+						<div class="contacts__form">
+
+							<form action="#" class="contacts-form">
+
+								<div class="form-item">
+									<span class="form-item__fake-placeholder">
+										Ваш Email
+									</span>
+									<input name="email" type="email" class="form-item__form-field">
+								</div>
+
+								<div class="form-item">
+									<span class="form-item__fake-placeholder">
+										Сообщение
+									</span>
+									<textarea name="message" id="#" cols="30" rows="10"
+										class="form-item__form-field"></textarea>
+								</div>
+
+								<div class="form-item">
+									<button type="submit" class="btn">
+										Отправить
+									</button>
+								</div>
+
+							</form>
+
+							<div id="answer">
+
+							</div>
+
 						</div>
 
 					</div>
@@ -589,7 +651,7 @@
 				<span class="footer__copyright">© 2022 — Никита Калинов</span>
 
 				<p class="footer__text">
-					Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.<br>Этот сайт сделал в рамках
+					Веб-разработчик из Омска, занимаюсь версткой и созданием сайтов.<br>Этот сайт сделал в рамках
 					прохождения обучения по верстке на курсах от <a href="#!">WebCademy.ru</a>
 				</p>
 
@@ -599,13 +661,16 @@
 
 	<!-- BackTop -->
 
-	<a href="#top" id="backbtn" class="backbtn none">
+	<a href="#top" id="backbtn" class="backbtn linkFor none">
 		<div class="backbtn__arrow">
 			&uarr;
 		</div>
 	</a>
 
 	<script src="./js/jquery-3.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="./js/jquery.validate.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./js/jquery.nav.js"></script>
 	<script src="./js/mixitup.min.js"></script>
 	<script src="./js/parallax.min.js"></script>

@@ -240,3 +240,10 @@
         }
     }
 }
+
+.heading-link{
+    &:hover, &:active, &:focus{
+        color: $red-color;
+    }
+}
+

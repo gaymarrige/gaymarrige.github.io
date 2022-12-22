@@ -6,7 +6,15 @@
     line-height: 1.3;
     color: $black-color;
 
+    opacity: 0;
+
     display: none;
+
+    a{
+        &:hover{
+            color: $red-color;
+        }
+    }
 }
 
 @media (max-width: 899px){

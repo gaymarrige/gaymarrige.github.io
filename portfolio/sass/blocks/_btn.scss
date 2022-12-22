@@ -10,6 +10,14 @@
 
     color: $black-color;
 
+    &:hover, &:focus{
+        background-color: $btn-hover;
+    }
+
+    &:active{
+        background-color: $btn-active;
+    }
+
     /* TabletBig */
     @media (max-width: 1139px) {
         padding: 0px 26px;
@@ -17,5 +25,13 @@
 
     &--gray{
         background-color: $gray-color;
+
+        &:hover, &:focus{
+            background-color: $gray-btn-hover;
+        }
+
+        &:active{
+            background-color: $gray-btn-active;
+        }
     }
 }

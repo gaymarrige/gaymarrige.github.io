@@ -165,6 +165,10 @@ body > * {
   margin-top: auto; /* sticky footer */
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .about {
   display: flex;
   justify-content: space-between;
@@ -370,6 +374,12 @@ body > * {
   color: #000000;
   /* TabletBig */
 }
+.btn:hover, .btn:focus {
+  background-color: #FFEB8D;
+}
+.btn:active {
+  background-color: #F5D22D;
+}
 @media (max-width: 1139px) {
   .btn {
     padding: 0px 26px;
@@ -377,6 +387,12 @@ body > * {
 }
 .btn--gray {
   background-color: #EFF7FC;
+}
+.btn--gray:hover, .btn--gray:focus {
+  background-color: #D1EDFF;
+}
+.btn--gray:active {
+  background-color: #B0DCF8;
 }
 
 .header-banner {
@@ -502,6 +518,10 @@ body > * {
   /* TabletBig */
   /* Tablet */
 }
+.socials img {
+  width: 48px;
+  height: 48px;
+}
 @media (max-width: 1139px) {
   .socials {
     -moz-column-gap: 20px;
@@ -513,6 +533,9 @@ body > * {
     width: 38px;
     height: 38px;
   }
+}
+.socials__link:hover {
+  opacity: 0.75;
 }
 
 .main-link {
@@ -528,7 +551,7 @@ body > * {
   }
 }
 .main-link:hover {
-  color: #1A71D2;
+  color: #FF543E;
 }
 
 .cards {
@@ -788,6 +811,10 @@ body > * {
   .card--lg p {
     font-size: 14px;
   }
+}
+
+.heading-link:hover, .heading-link:active, .heading-link:focus {
+  color: #FF543E;
 }
 
 .mix-block__btns {
@@ -1074,7 +1101,11 @@ body > * {
   font-size: 18px;
   line-height: 1.3;
   color: #000000;
+  opacity: 0;
   display: none;
+}
+.nav a:hover {
+  color: #FF543E;
 }
 
 @media (max-width: 899px) {
@@ -1120,7 +1151,7 @@ body > * {
   height: 60px;
   bottom: 20px;
   right: 50px;
-  z-index: 9999;
+  z-index: 1049;
   border-radius: 50%;
   background-color: white;
   font-weight: 700;
@@ -1168,8 +1199,198 @@ body > * {
   background-color: #f78434;
 }
 
+.overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: #254974;
+  opacity: 0.8;
+}
+.overlay--active {
+  display: block;
+}
+
+.contacts-form {
+  width: 540px;
+  padding: 62px 50px 50px;
+  background-color: white;
+  box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+  /* TabletBig */
+  /* Tablet */
+  /* Mobile */
+}
+@media (max-width: 1139px) {
+  .contacts-form {
+    width: 420px;
+  }
+}
+@media (max-width: 899px) {
+  .contacts-form {
+    width: 320px;
+    padding: 32px 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-form {
+    width: 290px;
+    padding: 44px 15px 40px;
+  }
+}
+
+.form-item {
+  position: relative;
+  width: 100%;
+}
+.form-item .btn {
+  /* TabletBig */
+  /* Mobile */
+}
+@media (max-width: 1139px) {
+  .form-item .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .form-item .btn {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+  }
+}
+.form-item input {
+  width: 100%;
+  height: 39px;
+  border-bottom: 1px solid #E5E5E5;
+  transition: border-bottom 0.2s ease-in;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: black;
+  /* Tablet */
+}
+@media (max-width: 899px) {
+  .form-item input {
+    height: 30px;
+    font-size: 16px;
+  }
+}
+.form-item input:active, .form-item input:focus {
+  border-bottom: 1px solid #FF543E;
+}
+.form-item textarea {
+  resize: none;
+  width: 100%;
+  height: 162px;
+  border-bottom: 1px solid #E5E5E5;
+  transition: border-bottom 0.2s ease-in;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  /* Tablet */
+  /* Tablet */
+  /* Mobile */
+}
+@media (max-width: 899px) {
+  .form-item textarea {
+    font-size: 16px;
+  }
+}
+@media (max-width: 899px) {
+  .form-item textarea {
+    height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .form-item textarea {
+    height: 188px;
+  }
+}
+.form-item textarea:active, .form-item textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #FF543E;
+}
+
+.form-item:first-child {
+  margin-bottom: 42px;
+  /* TabletBig */
+  /* Mobile */
+}
+@media (max-width: 1139px) {
+  .form-item:first-child {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .form-item:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.form-item:nth-child(2) {
+  margin-bottom: 30px;
+  /* TabletBig */
+  /* Mobile */
+}
+@media (max-width: 1139px) {
+  .form-item:nth-child(2) {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .form-item:nth-child(2) {
+    margin-bottom: 30px;
+    min-height: 188px;
+  }
+}
+
+.form-item__fake-placeholder {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: #9D9D9D;
+  /* Tablet */
+}
+@media (max-width: 899px) {
+  .form-item__fake-placeholder {
+    font-size: 18px;
+  }
+}
+.form-item__fake-placeholder--active {
+  top: -10px;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 16px;
+  color: #ECA73F;
+}
+
+.error {
+  color: #FF543E;
+  /* Mobile */
+}
+@media (max-width: 767px) {
+  .error {
+    font-size: 14px;
+  }
+}
+
+.contacts-form__success {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6;
+  color: black;
+}
+
 .header {
   padding-top: 52px;
+  overflow-x: hidden;
   /* TabletBig */
   /* Tablet */
 }
@@ -1224,10 +1445,14 @@ body > * {
   }
 }
 .header-top__nav-item a {
+  cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
   /* TabletBig */
+}
+.header-top__nav-item a:hover, .header-top__nav-item a:active, .header-top__nav-item a:focus {
+  color: #FF543E;
 }
 @media (max-width: 1139px) {
   .header-top__nav-item a {
@@ -1240,6 +1465,13 @@ body > * {
   -moz-column-gap: 26px;
        column-gap: 26px;
   /* Tablet */
+}
+.header-top__links-item img {
+  width: 42px;
+  height: 42px;
+}
+.header-top__links-item:hover, .header-top__links-item:active, .header-top__links-item:focus {
+  opacity: 0.75;
 }
 @media (max-width: 899px) {
   .header-top__links {
@@ -1265,6 +1497,7 @@ body > * {
 
 .skills {
   padding-bottom: 90px;
+  overflow-x: hidden;
   /* TabletBig */
   /* Tablet */
 }
@@ -1560,6 +1793,7 @@ body > * {
 }
 .contacts__text {
   width: 538px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
